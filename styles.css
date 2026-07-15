@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
+header {
+  background-color: #1f2937;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 10vw;
+}
+
+#header-left {
+  display: flex;
+  font-size: 24px;
+  align-items: center;
+  justify-content: start;
+  color: #f9faf8;
+  width: 40vw;
+}
+
+#header-right {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 18px;
+  width: 40vw;
+}
+
+.header-link a {
+  font-size: 18px;
+  color: #e5e7eb;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  height: 400px;
+}
+
+/* Row 1 */
+#row-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1f2937;
+  padding: 32px 0;
+  padding: 0 10vw;
+}
+
+#row-1-right-image {
+  background-color: gray;
+  width: 40vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  height: 250px;
+}
+
+#row-1-left {
+  width: 40vw;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#row-1-hero-text {
+  font-size: 48px;
+  color: #f9faf8;
+  font-weight: 900;
+}
+
+#row-1-info-text {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+#row-1-left-call-to-action button {
+  border-radius: 16px;
+  border-style: none;
+  background-color: #3882f6;
+  padding: 8px 16px;
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+/* Row 2 */
+#row-2 {
+  background-image: url("./images/mountain.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+#row-2-hero-text {
+  padding: 16px;
+  color: black;
+  font-size: 36px;
+  font-weight: 900;
+}
+
+#row-2-cards {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.card {
+  padding: 16px;
+  width: 200px;
+  height: 275px;
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #e5e7eb;
+}
+
+.card:hover {
+  backdrop-filter: blur(4px);
+  scale: 1.05;
+}
+
+.card-frame {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #3882f6;
+  border-radius: 16px;
+}
+
+.card-text {
+  text-align: center;
+  font-size: 18px;
+  color: #1f2937;
+}
+
+/* Row 3 */
+#row-3 {
+  background-color: #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10vw;
+  gap: 16px;
+}
+
+#row-3-text {
+  text-align: justify;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1f2937;
+}
+
+#row-3-quote {
+  text-align: right;
+  font-size: 36px;
+  font-weight: 900;
+  color: #1f2937;
+}
+
+/* Row 4 */
+#row-4 {
+  padding: 128px 10vw;
+}
+
+#row-4-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+  background-color: #3882f6;
+  border-radius: 8px;
+}
+
+#row-4-hero-text {
+  font-size: 24px;
+  color: #f9faf8;
+  font-weight: 500;
+}
+
+#row-4-sub-text {
+  font-size: 18px;
+  color: #e5e7eb;
+  font-weight: 300;
+}
+
+#row-4-button button {
+  padding: 4px 16px;
+  background-color: #3882f6;
+  border-radius: 8px;
+  border: 2px solid #e5e7eb;
+  color: white;
+  font-weight: 900;
+}
+
+footer {
+  background-color: #1f2937;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: #e5e7eb;
+  padding: 16px 0;
+}
